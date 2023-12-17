@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <title>Namorada</title>
+</head>
+<body>
+    <div class="app-container heigth-100vh">
+        <div class="back">
+            <a href="./index.html"  ><img src="./img/Group 13backArrow.svg" alt="botao voltar"></a>
+            <h1>Lembrar senha</h1>
+        </div>
+        <div class="base-container margin-50px">
+            <form class="base-form">
+                <h3 class="lembrar-title">Dica de senha</h3>
+                <ul class="dicas">
+                    <li class="dica">É um designer bonitao</li>
+                    <li class="dica">É moreno</li>
+                    <li class="dica">É fofo contigo e te ama</li>
+                    <li class="dica">A senha começa com c minusculo</li>
+                </ul>
+                <div class="base-input-wrapper">
+                    <img src="./img/VectorLock.svg" alt="icone de cadeado">
+                    <input class="base-input" type="password" placeholder="Senha" id="redefinir-password">
+                </div>
+                <input type="button" class="base-button" value="Lembrar senha" onclick="lembrarSenha()">   
+            </form>
+        </div>
+        <div id="sucesso" class="sucesso feedback display-none">
+            <span>Acertou!</span>
+        </div>
+
+        <div id="falha" class="falha feedback display-none">
+            <span>Senha incorreta</span>
+        </div>
+    </div>
+    <script src="./scripts/validacao.js"></script>
+</body>
+</html>

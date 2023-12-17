@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <title>Namorada</title>
+</head>
+<body>
+    <div class="app-container heigth-100vh">
+        <div class="element-container-column-center">
+            <img class="logo" src="./img/logog.png" alt="">
+        </div>
+        <div class="element-container-column-center margin-50px">
+            <h1>Bem vinda</h1>
+            <h3>Feliz aniversário MEU AMOR &#10084;</h3>
+        </div>
+        <div class="base-container">
+            <form class="base-form">
+                <h1 class="login-title">Login</h1>
+                <div  class="base-input-wrapper">
+                    <img src="./img/girlAvatar.svg" alt="avatar de garota">
+                    <input class="base-input" type="text" value="geovanna lindona" readonly>
+                </div> <!--Borda com CSS e colorir a borda quando o elemento é selecionado-->
+                <div class="base-input-wrapper">
+                    <img src="./img/VectorLock.svg" alt="icone de cadeado">
+                    <input class="base-input" id="login-password" type="password" placeholder="Senha" >
+                </div> <!--Borda com CSS e colorir a borda quando o elemento é selecionado-->
+                <input type="button" value="Entrar" class="base-button" onclick="logar()">
+                <a class="sub-button" href="./lembrar.html">Qual é a minha senha?</a>
+            </form>
+        </div>
+
+        <div id="sucesso" class="sucesso feedback display-none">
+            <span>Entrando</span>
+        </div>
+
+        <div id="falha" class="falha feedback display-none">
+            <span>Tente novamente</span>
+        </div>
+    </div>
+
+    <script src="./scripts/validacao.js"></script>
+</body>
+</html>

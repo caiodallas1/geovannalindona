@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <title>te amo</title>
+</head>
+<body>
+<audio controls autoplay>
+
+  <source src="./img/dezembro.ogg" type="audio/ogg">
+
+  <source src="./img/dezembro.mp3" type="audio/mpeg">
+
+Your browser does not support the audio element.
+
+</audio>
+
+   <div class="app-container">
+        
+        <!-- cabeçalho com informações -->
+        <div class="info">
+            <div class="name-avatar">
+                <img class="avatar" src="./img/girlAvatar.png" alt="">
+                <h1 class="name">Coé meu xuxu, dedico pra você isso tudo</h1>
+            </div>
+            <div class="date-emoji">
+                <span class="date">17/12/2023, hoje é o seu dia!</span>
+                <img class="emoji" src="./img/party-popper.png" alt="">
+            </div>
+        </div>
+        <div class="line"></div>
+
+  
+        <!-- Quiz de perguntas -->
+        <div class="card quiz margin-bottom-20px">
+            <h2 class="card-title">Quiz chique</h2>
+            <p class="card-p">Responda questões e ganhe pontos!</p>
+            <button id="btn-play" class="btn-play" onclick="openQuiz()">Jogar</button>
+        </div>
+ <!-- Quiz de perguntas -->
+        <div class="card quiz margin-bottom-20px">
+            <h2 class="card-title">Eu te amo meu amor</h1>
+            <p class="card-p">Querida, Geovanna. Em meio a linhas de códigos e programação, gostaria de expressar o quanto eu amo você, e o quão incrível você é pra mim, não há medida para o quanto você é especial, e a cada dia descubro novas razões para me apaixonar por você, tu é simplesmente extraordinária, e é tão lindo a maneira em como você se dedica ao Senhor,  e sabe?  às vezes, tento desvendar o mistério que é você, mas percebo que não é necessário entender tudo, apenas apreciar e amar. Cada detalhe seu é uma obra de arte única, na qual eu quero contemplar todos os dias, quero estar ao seu lado todos os dias admirando a mulher que você é. Que os planos traçados pelo Altíssimo se realizem em sua vida de maneira extraordinária, que cada sonho seu seja abençoado e cada esforço recompensado. Você é uma joia preciosa nas mãos de Deus, e eu oro para que cada momento da sua vida brilhe intensamente, refletindo a Graça que está sob você, Geovanna, você tem se tornado o capítulo mais bonito do meu livro, a página que eu quero reler infinitas vezes, meu amor por você só cresce, e a gratidão por tê-la ao meu lado é um sentimento que transborda em meu peito, contigo quero viver o propósito, o chamado, estarei aqui pra segurar sua mão, te amar todos os dias assim como Cristo amou a Igreja, quero poder falar de você pro Senhor todos os dias, eu te amo sua abusada, linda, meiga, fofa, maravilhosa, estupenda, inteligente, sabia, pregadora, profeta, varoa do misterio, varoa de proverbios, encantadora, fabulosa, poliglota, agiota, administradora, designer e bandida 
+
+</p>
+            
+
+        <div id="quiz-popup" class="popup">
+            <div id="popup-content">
+                <h2 id="pergunta" class="pergunta"></h2>
+                <button id="resposta-1" class="resposta"></button>
+                <button id="resposta-2" class="resposta"></button>
+                <button id="resposta-3" class="resposta"></button>
+                <div id="resposta-visual-container" class="resposta-visual-container">
+                <div id="bloco-0" class="bloco"></div>
+                <div id="bloco-1" class="bloco"></div>
+                <div id="bloco-2" class="bloco"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caça ao tesouro -->
+        <div class="card caca-tesouro">
+            <h2 class="card-title">Caça ao tesouro</h2>
+            <p class="card-p">Consegue encontrar o tesouro escondido?</p>
+            <button class="btn-play" onclick="openCacaTesouro();">Jogar</button>
+        </div>
+
+        <div id="caca-tesouro-popup" class="popup">
+            <div id="caca-tesouro-popup-content">
+                <h2 id="dica" class="dica"></h2>
+                <h1 id="pedido" class="pedido">Parabéns! Agora iremos casar</h1>
+                <div id="senha-caca-tesouro-wrapper" class="base-input-wrapper">
+                    <input type="text" id="senha-caca-tesouro" class="base-input" placeholder="Senha">
+                </div>
+                <button id="prox-dica" class="btn-play" onclick="proximaDica()">Próxima dica</button>
+                <div id="falha" class="feedback display-none">
+                    <span>Tente novamente</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="card recompensa">
+            <h2 class="card-title">Recompensas</h2>
+            <p class="card-p">Troque pontos por recompensas</p>
+            <button class="btn-recompensa">Ver recompensas</button>
+        </div> -->
+    </div>
+
+    <script src="./scripts/dashboard.js"></script>
+    
+</body>
+</html>

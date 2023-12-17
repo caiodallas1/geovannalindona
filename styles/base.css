@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+}
+
+/* Define o body com a altura e largura da tela onde o app está sendo visualizado*/
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #161616;
+}
+
+.margin-50px{
+    margin: 50px 0;
+}
+
+.app-container{
+    width: 40%;
+    margin: 0 auto; /* centraliza o container */
+    background-color: #161616;
+    padding: 35px;
+}
+
+.heigth-100vh {
+    height: 100vh;
+}
+
+.element-container-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.base-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.base-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 15px;
+    background-color: #242424;
+    border-radius: 15px;
+    transition: .3s;
+    border: 1px solid #BD00FF;
+}
+
+.base-input-wrapper:hover {
+    border: 1px solid #fff;
+}
+
+.base-input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* Estilo padrão para botão */
+.base-button{
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #BD00FF 0%, #ED3E9D 100%);
+    border: none;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.sub-button{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Responsividade */
+
+@media only screen and (max-width: 768px) {
+    .app-container {
+       width: 100%;
+    }
+}

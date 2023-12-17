@@ -1,0 +1,55 @@
+.logo {
+    height: 100px;
+}
+
+.element-container-column-center h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.element-container-column-center h3 {
+    font-size: 12px;
+}
+
+.base-container h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.feedback {
+    margin: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.display-none {
+    display: none;
+}
+
+/* A partir daqui, estilos da página redefirnir */
+
+.back {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.back h1{
+    display: inline;
+    font-size: 16px;
+}
+
+.dicas {
+    margin-left: 25px;
+}
+
+.lembrar-title {
+    font-size: 20px;
+    font-weight: 700    ;
+}
+
+.dica {
+    font-size: 14px;
+    font-weight: 300;
+}
